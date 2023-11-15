@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Todo list</title>
+</head>
+<body>
+<div id="custom-cursor"><img src="cursor2.png" alt="Custom Cursor" style="width: 30px;"></div>
+<div class="mainContainer">
+  <div class="popFormContainer">
+    <div class="formContainer">
+      <div class="form">
+            
+             <div class="taskNameContainer">
+               <label for="taskName">Enter your Task Name</label>
+               <input type="text" id="taskName">
+             </div>
+       
+             <div class="taskDisContainer">
+               <label for="taskdis">Enter your Task dicription</label>
+               <textarea name="taskdis" id="taskdis" cols="23" rows="4"></textarea>
+             </div>
+       
+             <div class="actionbtns">
+               <button  type="submit" value="Add Task" class="button submitbtn"><span id="addCardBtn">Add task</span></button>
+               <button id="closebtn" type="button"  class="button" ><span>Close</span></button>
+             </div>
+           </div>
+     
+         </div>
+
+  </div>
+  <header>
+    <nav>
+
+      <div class="heading">
+        <h1 class="heading__title">To-Do List</h1>
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li>Home</li>
+          <li>About Todo</li>
+          <li>Contact us</li>
+        </ul>
+
+      </div>
+<div class="hamburger" onclick="rotate()">
+  <div class="line" id="line1"></div>
+  <div class="line" id="line2"></div>
+  <div class="line" id="line3"></div>
+</div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="TaskContainer">
+      <div  id="fixedCard">
+        <div class="pin">
+          <img src="pngegg.png" alt="">
+        </div>
+
+        <div class="cricle">
+          <img src="edit.png" alt="" style="width: 45%;" id="img">
+        </div>
+        <div class="text">
+          <h3>Write a New Task </h3>
+        </div>
+      </div>
+          
+</div>
+
+  </main>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
